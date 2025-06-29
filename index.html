@@ -28,7 +28,18 @@
       align-items: center;
     }
 
-    header h1 {
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-container img {
+      height: 40px;
+      width: auto;
+    }
+
+    .logo-container h1 {
       font-size: 28px;
     }
 
@@ -155,7 +166,10 @@
 </head>
 <body>
   <header>
-    <h1>RV Healthcare</h1>
+    <div class="logo-container">
+      <img src="R%20V%20_%20HEALTH%20CARE%20_%20LOGO.png" alt="RV Healthcare Logo">
+      <h1>RV Healthcare</h1>
+    </div>
     <nav>
       <a href="#about">About</a>
       <a href="#services">Services</a>
@@ -165,7 +179,7 @@
 
   <section class="hero-alt">
     <h1>Innovative Healthcare Solutions</h1>
-    <p>Quality Medicines, Accessible Pricing, Pan-India Reach.</p>
+    <p>Quality medicines, accessible pricing, pan-India reach.</p>
     <a href="#contact" class="btn-green">Contact Us Today</a>
   </section>
 
@@ -191,7 +205,7 @@
 
   <section class="section" id="services">
     <h2>Our Services</h2>
-    <p></p>
+    <p>We offer pharmaceutical R&D, third-party manufacturing, and expert healthcare consultancy tailored to your needs.</p>
   </section>
 
   <section class="section" id="products">
