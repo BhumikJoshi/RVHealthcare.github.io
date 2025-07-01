@@ -22,7 +22,7 @@
     header {
       background: #2e7d32;
       color: #fff;
-      padding: 20px 20px;
+      padding: 20px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -33,7 +33,6 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      flex-wrap: nowrap;
     }
 
     .logo-container img {
@@ -78,20 +77,17 @@
     }
 
     .btn-green {
-      background: linear-gradient(135deg, #43a047, #66bb6a);
+      background-color: #66bb6a;
       color: white;
-      padding: 12px 28px;
-      border-radius: 8px;
+      padding: 12px 24px;
+      border-radius: 6px;
       text-decoration: none;
-      font-weight: 600;
-      font-size: 16px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
-      display: inline-block;
+      font-weight: 500;
+      transition: background 0.3s ease;
     }
 
     .btn-green:hover {
-      background: #2e7d32;
+      background-color: #388e3c;
     }
 
     .features {
@@ -197,7 +193,7 @@
     }
 
     .contact-info {
-      margin-bottom: 20px;
+      margin-top: 30px;
     }
 
     .contact-info i {
@@ -217,7 +213,8 @@
     }
 
     footer .btn-green {
-      margin-top: 10px;
+      display: inline-block;
+      margin: 10px auto;
     }
 
     @media (max-width: 768px) {
@@ -265,7 +262,7 @@
 
   <section class="section" id="about">
     <h2>About Us</h2>
-    <p>R V Healthcare is dedicated to improving global health through innovation, accessibility, and unwavering commitment to quality.</p>
+    <p>RV Healthcare is dedicated to improving global health through innovation, accessibility, and unwavering commitment to quality.</p>
   </section>
 
   <section class="features">
@@ -318,6 +315,18 @@
   </section>
 
   <footer id="contact">
+    <!-- Google Maps Embed with Marker -->
+    <div style="margin: 40px auto; max-width: 1000px;">
+      <iframe
+        src="https://maps.google.com/maps?q=A-11%20Shiv%20Ananta%20Chandkheda%20Ahmedabad%20Gujarat%20382424&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        width="100%" 
+        height="350" 
+        style="border:0; border-radius: 10px;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+
     <div class="contact-info">
       <i>📍</i>
       <h4>Head Office</h4>
@@ -329,7 +338,10 @@
       <h4>Email</h4>
       <p>rvhealthcare87@gmail.com</p>
     </div>
-    <a href="mailto:rvhealthcare87@gmail.com?subject=Inquiry&body=Dear%20RV%20Healthcare," class="btn-green">Send a Message</a>
+
+    <div>
+      <a href="mailto:rvhealthcare87@gmail.com?subject=Inquiry&body=Dear%20RV%20Healthcare," class="btn-green">Send a Message</a>
+    </div>
     <p style="margin-top: 20px;">&copy; 2025 RV Healthcare. All Rights Reserved.</p>
   </footer>
 </body>
