@@ -84,6 +84,11 @@
       border-radius: 6px;
       text-decoration: none;
       font-weight: 500;
+      transition: background 0.3s ease;
+    }
+
+    .btn-green:hover {
+      background-color: #4caf50;
     }
 
     .features {
@@ -169,7 +174,50 @@
       margin: 10px auto;
     }
 
-    /* ✅ Responsive Fix */
+    .product-preview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .product-preview-card {
+      background: #fafafa;
+      border: 1px solid #c8e6c9;
+      border-radius: 10px;
+      padding: 16px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-preview-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    }
+
+    .product-preview-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .product-preview-card h3 {
+      font-size: 18px;
+      color: #2e7d32;
+      margin-bottom: 6px;
+    }
+
+    .product-preview-card p {
+      font-size: 14px;
+      color: #555;
+    }
+
     @media (max-width: 768px) {
       header {
         flex-direction: column;
@@ -240,7 +288,31 @@
 
   <section class="section" id="products">
     <h2>Our Products</h2>
-    <p><a href="products.html" class="btn-green">View All Medicines</a></p>
+    <div class="product-preview-grid">
+      <div class="product-preview-card">
+        <img src="Aloe Bath Soap.jpg" alt="Aloe Bath Soap">
+        <h3>Aloevior Bath Soap</h3>
+        <p>78% TFM Grade 1 Bathing Bar</p>
+      </div>
+      <div class="product-preview-card">
+        <img src="EVA-VR.jpg" alt="EVA-VR Capsules">
+        <h3>EVA-VR Capsules</h3>
+        <p>Controls Abnormal Menstrual Bleeding</p>
+      </div>
+      <div class="product-preview-card">
+        <img src="Muscal-VR oil.jpg" alt="Muscal-VR Oil">
+        <h3>Muscal-VR Oil</h3>
+        <p>Relief from Pain & Sprains</p>
+      </div>
+      <div class="product-preview-card">
+        <img src="RV Platex Syrup.jpg" alt="RV Platex Syrup">
+        <h3>RV Platex Syrup</h3>
+        <p>Increases Platelet Count</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top: 30px;">
+      <a href="products.html" class="btn-green">View All Medicines</a>
+    </div>
   </section>
 
   <footer id="contact">
