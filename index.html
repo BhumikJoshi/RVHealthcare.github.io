@@ -78,17 +78,20 @@
     }
 
     .btn-green {
-      background-color: #81c784;
+      background: linear-gradient(135deg, #43a047, #66bb6a);
       color: white;
-      padding: 12px 24px;
-      border-radius: 6px;
+      padding: 12px 28px;
+      border-radius: 8px;
       text-decoration: none;
-      font-weight: 500;
-      transition: background 0.3s ease;
+      font-weight: 600;
+      font-size: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+      display: inline-block;
     }
 
     .btn-green:hover {
-      background-color: #4caf50;
+      background: #2e7d32;
     }
 
     .features {
@@ -141,39 +144,6 @@
       margin: 0 auto;
     }
 
-    footer {
-      background: #2e7d32;
-      color: white;
-      padding: 40px 20px;
-      font-size: 14px;
-      text-align: center;
-    }
-
-    .contact-info {
-      margin-bottom: 20px;
-    }
-
-    .contact-info i {
-      font-size: 24px;
-      margin-bottom: 5px;
-      display: inline-block;
-    }
-
-    .contact-info h4 {
-      font-size: 18px;
-      font-weight: bold;
-      margin: 10px 0 5px;
-    }
-
-    .contact-info p {
-      margin-bottom: 10px;
-    }
-
-    footer .btn-green {
-      display: inline-block;
-      margin: 10px auto;
-    }
-
     .product-preview-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -216,6 +186,38 @@
     .product-preview-card p {
       font-size: 14px;
       color: #555;
+    }
+
+    footer {
+      background: #2e7d32;
+      color: white;
+      padding: 40px 20px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .contact-info {
+      margin-bottom: 20px;
+    }
+
+    .contact-info i {
+      font-size: 24px;
+      margin-bottom: 5px;
+      display: inline-block;
+    }
+
+    .contact-info h4 {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0 5px;
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+    }
+
+    footer .btn-green {
+      margin-top: 10px;
     }
 
     @media (max-width: 768px) {
@@ -327,9 +329,7 @@
       <h4>Email</h4>
       <p>rvhealthcare87@gmail.com</p>
     </div>
-    <div>
-      <a href="mailto:rvhealthcare87@gmail.com?subject=Inquiry&body=Dear%20RV%20Healthcare," class="btn-green">Send a Message</a>
-    </div>
+    <a href="mailto:rvhealthcare87@gmail.com?subject=Inquiry&body=Dear%20RV%20Healthcare," class="btn-green">Send a Message</a>
     <p style="margin-top: 20px;">&copy; 2025 RV Healthcare. All Rights Reserved.</p>
   </footer>
 </body>
