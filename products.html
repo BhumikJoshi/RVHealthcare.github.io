@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Medicines | RV Healthcare</title>
+  <title>Our Products | RV Healthcare</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
   <style>
     * {
@@ -16,23 +16,50 @@
     body {
       background: #f4f6f9;
       color: #333;
-      padding: 0;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
     }
 
     header {
-      background: linear-gradient(90deg, #1b5e20, #43a047);
+      background: #2e7d32;
       color: white;
-      padding: 30px 0;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    header h1 {
-      font-size: 32px;
-      font-weight: 700;
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: nowrap;
+    }
+
+    .logo-container img {
+      height: 40px;
+      width: auto;
+    }
+
+    .logo-container h1 {
+      font-size: 28px;
+    }
+
+    nav {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
     }
 
     main {
@@ -53,7 +80,7 @@
       font-size: 28px;
     }
 
-    .medicine-grid {
+    .product-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 30px;
@@ -62,7 +89,7 @@
       margin: 0 auto;
     }
 
-    .medicine-card {
+    .product-card {
       background: #fafafa;
       border: 1px solid #c8e6c9;
       border-radius: 10px;
@@ -72,12 +99,12 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .medicine-card:hover {
+    .product-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 6px 16px rgba(0,0,0,0.1);
     }
 
-    .medicine-card img {
+    .product-card img {
       width: 100%;
       height: 160px;
       object-fit: cover;
@@ -85,13 +112,13 @@
       margin-bottom: 15px;
     }
 
-    .medicine-card h3 {
+    .product-card h3 {
       font-size: 20px;
       color: #2e7d32;
       margin-bottom: 8px;
     }
 
-    .medicine-card p {
+    .product-card p {
       font-size: 15px;
       color: #555;
     }
@@ -126,33 +153,134 @@
       width: 100%;
       box-shadow: inset 0 2px 8px rgba(255,255,255,0.05);
     }
+
+    /* Responsive header nav for smaller devices */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      nav a {
+        padding: 5px 10px;
+        font-size: 15px;
+      }
+
+      .logo-container {
+        justify-content: center;
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Our Medicines</h1>
+    <div class="logo-container">
+      <img src="R%20V%20_%20HEALTH%20CARE%20_%20LOGO.png" alt="RV Healthcare Logo" />
+      <h1>RV Healthcare</h1>
+    </div>
+    <nav>
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="#products">Products</a>
+    </nav>
   </header>
 
   <main>
     <section class="section">
-      <h2>Available Products</h2>
-      <div class="medicine-grid">
-        <div class="medicine-card">
-          <img src="https://via.placeholder.com/200x150.png?text=Paracetamol" alt="Paracetamol">
-          <h3>Paracetamol 500mg</h3>
-          <p>Fever & pain relief</p>
+      <h2>Explore Our Range</h2>
+      <div class="product-grid">
+
+        <div class="product-card">
+          <img src="Aloe Bath Soap.jpg" alt="Aloe Bath Soap">
+          <h3>Aloevior Bath Soap</h3>
+          <p>100% Natural, minimum 78% TFM, Grade 1 Bathing bar</p>
         </div>
-        <div class="medicine-card">
-          <img src="https://via.placeholder.com/200x150.png?text=Azithromycin" alt="Azithromycin">
-          <h3>Azithromycin 250mg</h3>
-          <p>Antibiotic for infections</p>
+
+        <div class="product-card">
+          <img src="Aloe Vera Gel.jpg" alt="Aloe Vera Gel">
+          <h3>RV-Aloevera Gel</h3>
+          <p>Nature’s Soothing & Moisture Gel enriched with Papaya. Ideal for daily skin care.</p>
         </div>
-        <div class="medicine-card">
-          <img src="https://via.placeholder.com/200x150.png?text=Omeprazole" alt="Omeprazole">
-          <h3>Omeprazole 20mg</h3>
-          <p>Acidity & heartburn control</p>
+
+        <div class="product-card">
+          <img src="EVA-VR.jpg" alt="EVA-VR Capsules">
+          <h3>EVA-VR Capsules</h3>
+          <p>To Control Abnormal Menstrual Bleeding</p>
         </div>
-        <!-- Add more products similarly -->
+
+        <div class="product-card">
+          <img src="Ferro RV Syrup.jpg" alt="Ferro RV Syrup">
+          <h3>Fero RV Iron Syrup</h3>
+          <p>Multivitamin syrup enriched with Iron and Calcium. Supports daily energy.</p>
+        </div>
+
+        <div class="product-card">
+          <img src="Muscal-VR oil.jpg" alt="Muscal-VR Massage Oil">
+          <h3>Muscal-VR Massage Oil</h3>
+          <p>Proven Formula for Muscular pains, Sprains & Lumbago</p>
+        </div>
+
+        <div class="product-card">
+          <img src="Muscal-VR.jpg" alt="Muscal-VR Massage Gel">
+          <h3>Muscal-VR Massage Gel</h3>
+          <p>Anti Inflammatory,Pain Relief Gel</p>
+        </div>
+
+        <div class="product-card">
+          <img src="Pilo-RV.jpg" alt="Pilo-RV">
+          <h3>PILO-RV Tablets</h3>
+          <p>Pilo-Rv:-*Relieves pain, soothes & provides comfort for piles.</p>
+        </div>
+
+        <div class="product-card">
+          <img src="Pureshila GOLD.jpg" alt="Pureshila GOLD">
+          <h3>Pureshila GOLD</h3>
+          <p>Pureshila Gold Capsules:-Boosts strength and stamina, restore Energy</p>
+        </div>
+
+        <div class="product-card">
+          <img src="Reno RV Syrup.jpg" alt="Reno RV Syrup">
+          <h3>Reno RV Syrup</h3>
+          <p>A Herbal Remedy for  Renal health</p>
+        </div>
+
+        <div class="product-card">
+          <img src="Reno RV.jpg" alt="Reno RV Tablets">
+          <h3>Reno RV Tablets</h3>
+          <p>Proven Formula for kidney stones</p>
+        </div>
+
+        <div class="product-card">
+          <img src="RV Gain Hair Oil.jpg" alt="RV Gain Hair Oil">
+          <h3>RV Gain Hair Oil</h3>
+          <p>Hair Regrowth Treatment</p>
+        </div>
+
+        <div class="product-card">
+          <img src="RV Kuff.jpg" alt="RV Kuff">
+          <h3>RV Kuff</h3>
+          <p>Enriched With Honey & Tulsi Base Ayurvedic Syrup</p>
+        </div>
+
+        <div class="product-card">
+          <img src="RV Platex Syrup.jpg" alt="RV Plater Syrup">
+          <h3>RV Platex Syrup</h3>
+          <p>Increases Platelet Count</p>
+        </div>
+
+        <div class="product-card">
+          <img src="Testo Pro GOLD.jpg" alt="Testo Pro GOLD">
+          <h3>Testo Pro GOLD</h3>
+          <p>Fortified with Kesar,Makardhwaj & Swaran Bhasma</p>
+        </div>
+
       </div>
       <div class="center-button">
         <a href="index.html" class="btn-green">Back to Home</a>
